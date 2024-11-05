@@ -1,0 +1,72 @@
+// Importa Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Stile di base per il corpo
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; // Colore di sfondo chiaro
+    color: #343a40; // Colore del testo scuro
+    margin: 0;
+    padding: 0;
+}
+
+// Personalizzazioni per il contenuto principale
+main {
+    background-color: lightcoral;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+// Pulsanti personalizzati (estensione di Bootstrap)
+.btn {
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+// Tabelle minimaliste
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+    th,
+    td {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #3490dc;
+        color: #fff;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+}
+
+// Form semplice
+.form-group {
+    margin-bottom: 15px;
+
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    input:focus,
+    textarea:focus {
+        border-color: #3490dc;
+        outline: none;
+        box-shadow: 0 0 4px rgba(52, 144, 220, 0.2);
+    }
+}
